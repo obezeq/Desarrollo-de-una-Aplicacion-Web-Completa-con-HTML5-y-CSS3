@@ -5,10 +5,14 @@
     font-family: Arial, Helvetica, sans-serif
 }
 
+:root {
+    --primary-color: #0074FF;
+    --secondary-color: #FFFFFF;
+}
+
 /* Reset */
 a {
     text-decoration: none;
-    color: #FFF;
 }
 
 ul {
@@ -26,7 +30,11 @@ header {
 
     padding: 2rem;
 
-    background-color: #0074FF;
+    background-color: var(--primary-color);
+}
+
+header a {
+    color: var(--secondary-color);
 }
 
 nav {
@@ -51,14 +59,39 @@ nav {
 }
 
 .header__nav--signin {
-    border: 1px solid #fff;
+    border: 1px solid var(--secondary-color);
     border-radius: 0.5rem;
     padding: 0.5rem 1.5rem;
 }
 
 .header__nav--signup {
-    background-color: #FFF;
-    color: #0074FF;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
     border-radius: 0.5rem;
     padding: 0.5rem 1.5rem;
+}
+
+/* Footer */
+footer {
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    justify-content: space-between;
+
+    padding: 2rem;
+
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+}
+
+.footer__left {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__list {
+    display: flex;
+    justify-content: space-between;
 }
