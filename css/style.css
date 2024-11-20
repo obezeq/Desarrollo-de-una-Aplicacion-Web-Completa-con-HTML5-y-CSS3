@@ -1,3 +1,7 @@
+/* ───────────────────────────────── */
+/*    CSS3 by ForoAlejandro v1.0.0   */
+/* ───────────────────────────────── */
+
 * {
     padding: 0;
     margin: 0;
@@ -10,7 +14,10 @@
     --secondary-color: #FFFFFF;
 }
 
-/* Reset */
+/* ───────────────────────────────── */
+/*              Reset                */
+/* ───────────────────────────────── */
+
 a {
     text-decoration: none;
 }
@@ -19,7 +26,20 @@ ul {
     list-style: none;
 }
 
-/* Header */
+/* ───────────────────────────────── */
+/*               Body                */
+/* ───────────────────────────────── */
+
+body {
+    display: grid;
+    min-height: 100dvh;
+    grid-template-rows: auto 1fr auto;
+}
+
+/* ───────────────────────────────── */
+/*              Header               */
+/* ───────────────────────────────── */
+
 header {
     width: 100%;
     height: 100%;
@@ -71,7 +91,10 @@ nav {
     padding: 0.5rem 1.5rem;
 }
 
-/* Footer */
+/* ───────────────────────────────── */
+/*              Footer               */
+/* ───────────────────────────────── */
+
 footer {
     width: 100%;
     height: 100%;
@@ -85,13 +108,17 @@ footer {
     color: var(--secondary-color);
 }
 
-.footer__left {
-    width: 100%;
+.footer__copyright {
+    width: 20%;
     display: flex;
     justify-content: space-between;
 }
 
 .footer__list {
+    width: 100%;
     display: flex;
-    justify-content: space-between;
+}
+
+.footer__nav {
+    color: var(--secondary-color);
 }
