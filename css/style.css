@@ -80,7 +80,7 @@ nav {
 }
 
 .header__list--nav {
-    gap: 5rem;
+    gap: 4rem;
 }
 
 .header__list--sign {
@@ -132,5 +132,27 @@ footer {
 }
 
 .footer__nav {
+    color: var(--secondary-color);
+}
+
+/* ───────────────────────────────── */
+/*               Main                */
+/* ───────────────────────────────── */
+
+main {
+    padding: 5rem;
+
+    color: var(--primary-color);
+}
+
+.main__presentation {
+    width: 100%;
+}
+
+.main__presentation--title {
+    font-size: 5rem;
+    border-radius: 2rem;
+    background-color: var(--primary-color);
+    padding: 1rem 3rem;
     color: var(--secondary-color);
 }
