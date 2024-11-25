@@ -7,57 +7,73 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header>
-        <section class="header__list header__list--logo">
-            <a class="header__logo--image" href="index.html">
-                <img src="" alt="ForoAlejandro Logo">
+    <header id="header">
+            <a class="header__logo" href="index.html">
+                <img class="header__logo--image" src="img/ForoAlejandro-Logo.svg" alt="ForoAlejandro Logo">
+                <span class="header__logo--text">ForoAlejandro</span>
             </a>
-            <a class="header__logo--text" href="index.html">
-                ForoAlejandro
-            </a>
-        </section>
-        <section>
             <nav>
                 <ul class="header__list header__list--nav">
-                    <li class="header__nav"><a href="">Forum</a></li>
-                    <li class="header__nav"><a href="">Blog</a></li>
-                    <li class="header__nav"><a href="">Contact</a></li>
+                    <li class="header__nav"><a href="forum.html">Forum</a></li>
+                    <li class="header__nav"><a href="blog.html">Blog</a></li>
+                    <li class="header__nav"><a href="contact.html">Contact</a></li>
                 </ul>
             </nav>
-        </section>
-        <section>
             <nav>
                 <ul class="header__list header__list--sign">
-                    <li class=""><a class="header__nav--signin" href="">Sign in</a></li>
-                    <li class=""><a class="header__nav--signup" href="">Sign up</a></li>
+                    <li class="sign-in.html"><a class="header__nav--signin" href="sign-in.html">Sign in</a></li>
+                    <li class="sign-up.html"><a class="header__nav--signup" href="sign-up.html">Sign up</a></li>
                 </ul>
             </nav>
-        </section>
     </header>
 
-    <main>
-        <section class="main__presentation">
-            <h1 class="main__presentation--title">FOROALEJANDRO</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam quod est fugit sunt nobis praesentium. Harum quaerat magni, iste dolore sint, aperiam, deserunt nihil accusantium corporis dolor architecto consequuntur rerum unde vel nisi itaque amet tempora placeat doloremque. Excepturi reiciendis reprehenderit labore et sunt totam nihil ipsam, neque exercitationem nostrum asperiores nemo voluptatum nobis consequuntur ratione aliquid voluptatibus, beatae rerum a. Eos, ipsam dicta illum voluptatum possimus dolorem perferendis optio mollitia totam rerum inventore aliquid ducimus natus sed ipsum consequuntur hic esse dolor vero, eligendi adipisci temporibus ratione! Magni placeat dolore eius unde quidem nemo provident rem quae tempora commodi.</p>
+    <main class="main__home">
+        <section class="home__presentation">
+            <h1 class="home__presentation--title">FOROALEJANDRO</h1>
+            <h2 class="home__presentation--subtitle">A forum for <span class="home__presentation--niche">programmers</span></h2>
+        </section>
+
+        <section class="home__descriptions">
+            <article class="home__description">
+                <h3 class="home__description--title">What?</h3>
+                <p class="home__description--content">At its heart, <b>FOROALEJANDRO</b> is a community-driven forum and personal blog—a tech wonderland where game devs, programmers, designers, and tech lovers collide, collaborate, and create.</p>
+                <p class="home__description--content">The FORUM is a place to ask questions, share skills, and explore topics in-depth, while the BLOG serves as a personal outlet for the site’s creator, offering insights, advice, and an inside look into the life of a tech enthusiast. This isn’t just a forum; it’s a laboratory for digital alchemy where ideas transform into reality.</p>
+            </article>
+    
+            <article class="home__description">
+                <h3 class="home__description--title">Why?</h3>
+                <p class="home__description--content">Because you’re here to go beyond the basics. You’re here to connect, innovate, and learn—to find answers to questions you didn’t even know you had. <b>FOROALEJANDRO</b> exists to fuel the passions of those who think big, create relentlessly, and push boundaries.</p>
+                <p class="home__description--content">We’ve designed this platform to empower you: to connect you with others who are as driven as you are and to foster a space where curiosity and creativity reign supreme. <b>FOROALEJANDRO</b> is where your passions find momentum, and your curiosity finds a home.</p>
+            </article>
+    
+            <article class="home__description">
+                <h3 class="home__description--title">Where?</h3>
+                <p class="home__description--content"><b>FOROALEJANDRO</b> lives on the digital frontier, accessible 24/7 from wherever you are. Whether you’re brainstorming at your desktop or browsing threads from your phone on a late-night coding sprint, <b>FOROALEJANDRO</b> is there.</p>
+                <p class="home__description--content">It’s not tied to any one device or moment—jump in from anywhere, at any time, and you’ll always find a buzz of activity and conversation waiting for you.</p>
+            </article>
+    
+            <article class="home__description">
+                <h3 class="home__description--title">How?</h3>
+                <p class="home__description--content">Getting started is as easy as logging in. Browse the FORUM to connect with other tech aficionados, learn something new, or help someone solve a challenge. Post questions, share your latest project, or dive into discussions that spark new ideas.</p>
+                <p class="home__description--content">And don’t forget to check out the BLOG for the latest musings from the creator—insights and updates designed to inspire and connect. The <b>FOROALEJANDRO</b> experience is interactive, open, and built for those who seek both depth and creativity in every click.</p>
+            </article>
         </section>
 
     </main>
 
     <footer>
-        <section class="footer__copyright">
-            <a class="footer__nav" href=""><img src="" alt="ForoAlejandro"></a>
-            <span class="footer__nav">© 2024 <a class="footer__nav" href="">ForoAlejandro</a></span>
-        </section>
-        <section class="">
-            <nav>
-                <ul class="footer__list">
-                    <li><a class="footer__nav" href="/terms-of-service.html">Terms of Service</a></li>
-                    <li><a class="footer__nav" href="/privacy-policy.html">Privacy Policy</a></li>
-                    <li><a class="footer__nav" href="/rules.html">Rules</a></li>
-                    <li><a class="footer__nav" href="/contact.html">Contact</a></li>
-                </ul>
-            </nav>
-        </section>
+        <a class="footer__copyright" href="#header">
+            <img class="footer__copyright--image" src="img/ForoAlejandro-Logo.svg" alt="ForoAlejandro Logo">
+            <span>© 2024 ForoAlejandro</span>
+        </a>
+        <nav>
+            <ul class="footer__list">
+                <li><a class="footer__nav" href="/terms-of-service.html">Terms of Service</a></li>
+                <li><a class="footer__nav" href="/privacy-policy.html">Privacy Policy</a></li>
+                <li><a class="footer__nav" href="/rules.html">Rules</a></li>
+                <li><a class="footer__nav" href="/contact.html">Contact</a></li>
+            </ul>
+        </nav>
     </footer>
 </body>
 </html>
