@@ -11,7 +11,19 @@
 
 :root {
     --primary-color: #0074FF;
-    --secondary-color: #FFFFFF;
+    --secondary-color: #ffffff;
+}
+
+[data-theme="light"] {
+    /* Dark mode */
+    --primary-color: #ffffff;
+    --secondary-color: #0074FF;
+}
+
+[data-theme="dark"] {
+    /* Dark mode */
+    --primary-color: #ffffff;
+    --secondary-color: #0074FF;
 }
 
 /* ───────────────────────────────── */
@@ -37,6 +49,43 @@ body {
     flex-direction: column;
     min-height: 100vh;
     margin: 0;
+
+    background-color: var(--secondary-color);
+}
+
+h1::selection {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+}
+
+h2::selection {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+}
+
+h3::selection {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+}
+
+p::selection {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+}
+
+a::selection {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+}
+
+span::selection{
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+}
+
+b::selection {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
 }
 
 /* ───────────────────────────────── */
@@ -81,6 +130,7 @@ nav {
 
 .header__logo--image {
     width: 3rem;
+    filter: brightness(0) saturate(100%) invert(100%);
 }
 
 .header__logo--text {
@@ -180,6 +230,8 @@ main {
     display: flex;
     flex-direction: column;
     gap: 9rem;
+    position: relative;
+    overflow: hidden;
 }
 
 .home__presentation--title {
@@ -205,6 +257,14 @@ main {
     width: 66%;
     display: flex;
     flex-direction: column;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.home__descriptions.visible {
+    opacity: 1; /* Fully visible */
+    transform: translateY(0); /* Move to original position */
 }
 
 .home__description {
@@ -273,4 +333,62 @@ main {
     background-color: var(--secondary-color);
     color: var(--primary-color);
     border: 0.2rem solid var(--primary-color);
+}
+
+.sign__form--element {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+}
+
+.sign__form--label {
+    font-size: 1.2rem;
+}
+
+.sign__form--input {
+    padding: 0.7rem;
+    border: transparent;
+    outline: 0.12rem solid var(--primary-color);
+    color: var(--primary-color);
+    border-radius: 0.5rem;
+}
+
+.sign__form--input::placeholder {
+    color: var(--primary-color);
+}
+
+.sign__form--input:focus {
+    outline: 0.13rem solid var(--primary-color);
+}
+
+.sign__form--links {
+    display: flex;
+    justify-content: space-between;
+}
+
+.sign__form--link {
+    color: var(--primary-color);
+}
+
+.underline-animation {
+    position: relative;
+    text-decoration: none; /* Remove default underline */
+    color: var(--primary-color); /* Change to your desired color */
+    overflow: hidden; /* Hide the underline initially */
+}
+
+.underline-animation::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px; /* Thickness of the underline */
+    background-color: var(--primary-color); /* Color of the underline */
+    transform: translateX(-100%); /* Start off-screen */
+    transition: transform 0.3s ease; /* Animation duration and easing */
+}
+
+.underline-animation:hover::after {
+    transform: translateX(0); /* Move underline into view on hover */
 }
