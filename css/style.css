@@ -31,9 +31,12 @@ ul {
 /* ───────────────────────────────── */
 
 body {
-    display: grid;
-    min-height: 100dvh;
-    grid-template-rows: auto 1fr auto;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
 }
 
 /* ───────────────────────────────── */
@@ -42,7 +45,6 @@ body {
 
 header {
     width: 100%;
-    height: 100%;
 
     display: flex;
     justify-content: space-around;
@@ -69,6 +71,16 @@ nav {
 
 .header__list--logo {
     gap: 4rem;
+}
+
+.header__logo {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.header__logo--image {
+    width: 3rem;
 }
 
 .header__logo--text {
@@ -106,29 +118,34 @@ nav {
 
 footer {
     width: 100%;
-    height: 100%;
 
     display: flex;
     justify-content: space-around;
     align-items: center;
 
     padding: 2rem;
+    margin-top: auto;
+
 
     background-color: var(--primary-color);
     color: var(--secondary-color);
 }
 
 .footer__copyright {
-    width: 20%;
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    color: var(--secondary-color);
+}
+
+.footer__copyright--image {
+    width: 3rem;
 }
 
 .footer__list {
     display: flex;
-    list-style: none;
-    width: 100%;
-    justify-content: flex-start;
+    gap: 3rem;
 }
 
 .footer__nav {
@@ -140,19 +157,120 @@ footer {
 /* ───────────────────────────────── */
 
 main {
-    padding: 5rem;
+    width: 100%;
+    flex: 1;
+    padding: 5rem 10rem;
 
     color: var(--primary-color);
 }
 
-.main__presentation {
+.main__form {
     width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    
 }
 
-.main__presentation--title {
-    font-size: 5rem;
+/* ───────────────────────────────── */
+/*               Home                */
+/* ───────────────────────────────── */
+
+.main__home {
+    display: flex;
+    flex-direction: column;
+    gap: 9rem;
+}
+
+.home__presentation--title {
+    display: inline-block;
+    font-size: 6rem;
     border-radius: 2rem;
     background-color: var(--primary-color);
-    padding: 1rem 3rem;
+    padding: 0.8rem 3rem;
     color: var(--secondary-color);
+}
+
+.home__presentation--subtitle {
+    font-size: 5rem;
+    padding-top: 3rem;
+}
+
+.home__presentation--niche {
+    color: var(--secondary-color);
+    -webkit-text-stroke: 0.1rem var(--primary-color);
+}
+
+.home__descriptions {
+    width: 66%;
+    display: flex;
+    flex-direction: column;
+}
+
+.home__description {
+    padding: 3rem 0;
+}
+
+.home__description--title {
+    font-size: 4rem;
+    padding: 1rem 0;
+}
+
+.home__description--content {
+    font-size: 1.3rem;
+    padding: 0.6rem 0;
+}
+
+/* ───────────────────────────────── */
+/*         Sign In & Sign Up         */
+/* ───────────────────────────────── */
+
+.sign {
+    width: 33%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+}
+
+.sign--title {
+    font-size: 5rem;
+    font-weight: bolder;
+}
+
+.sign__form {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+    padding: 2rem;
+    border: 0.2rem solid var(--primary-color);
+    border-radius: 1rem;
+}
+
+.sign__form--element {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+}
+
+.sign__form--button {
+    padding: 0.7rem;
+    font-size: 1rem;
+    border: solid 0.2rem transparent;
+    border-radius: 0.5rem;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+
+    transition: all 0.3s ease;
+}
+
+.sign__form--button:hover {
+    cursor: pointer;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    border: 0.2rem solid var(--primary-color);
 }
