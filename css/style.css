@@ -149,10 +149,16 @@ nav {
     gap: 1rem;
 }
 
-.header__nav--signin {
-    border: 1px solid var(--secondary-color);
+.header__nav--signin {  
+    outline: 1px solid var(--secondary-color);
     border-radius: 0.5rem;
     padding: 0.5rem 1.5rem;
+    transition: all 0.3s ease;
+}
+
+.header__nav--signin:hover {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
 }
 
 .header__nav--signup {
@@ -160,6 +166,14 @@ nav {
     color: var(--primary-color);
     border-radius: 0.5rem;
     padding: 0.5rem 1.5rem;
+    transition: all 0.3s ease;
+}
+
+.header__nav--signup:hover {
+    outline: 1px solid var(--secondary-color);
+    border-radius: 0.5rem;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
 }
 
 /* ───────────────────────────────── */
@@ -272,12 +286,12 @@ main {
 }
 
 .home__description--title {
-    font-size: 4rem;
+    font-size: 5rem;
     padding: 1rem 0;
 }
 
 .home__description--content {
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     padding: 0.6rem 0;
 }
 
@@ -295,7 +309,7 @@ main {
 }
 
 .sign--title {
-    font-size: 5rem;
+    font-size: 5.5rem;
     font-weight: bolder;
 }
 
@@ -320,7 +334,8 @@ main {
 .sign__form--button {
     padding: 0.7rem;
     font-size: 1rem;
-    border: solid 0.2rem transparent;
+    border: transparent;
+    outline: solid 0.2rem transparent;
     border-radius: 0.5rem;
     background-color: var(--primary-color);
     color: var(--secondary-color);
@@ -332,13 +347,13 @@ main {
     cursor: pointer;
     background-color: var(--secondary-color);
     color: var(--primary-color);
-    border: 0.2rem solid var(--primary-color);
+    outline: 0.15rem solid var(--primary-color);
 }
 
 .sign__form--element {
     display: flex;
     flex-direction: column;
-    gap: 0.6rem;
+    gap: 0.7rem;
 }
 
 .sign__form--label {
@@ -351,10 +366,12 @@ main {
     outline: 0.12rem solid var(--primary-color);
     color: var(--primary-color);
     border-radius: 0.5rem;
+    font-size: 0.9rem;
 }
 
 .sign__form--input::placeholder {
     color: var(--primary-color);
+    font-size: 0.9rem;
 }
 
 .sign__form--input:focus {
