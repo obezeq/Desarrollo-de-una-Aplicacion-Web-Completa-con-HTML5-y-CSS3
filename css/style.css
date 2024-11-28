@@ -2,28 +2,161 @@
 /*    CSS3 by ForoAlejandro v1.0.0   */
 /* ───────────────────────────────── */
 
+/* ───────────────────────────────── */
+/*           Gotham Fonts            */
+/* ───────────────────────────────── */
+
+/* Thin */
+@font-face {
+    font-family: 'Gotham';
+    src: url('/fonts/gotham-thin-webfont.woff2') format('woff2'),
+        url('/fonts/gotham-thin-webfont.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gotham';
+    src: url('/fonts/gotham-thinitalic-webfont.woff2') format('woff2'),
+        url('/fonts/gotham-thinitalic-webfont.woff') format('woff');
+    font-weight: 100;
+    font-style: italic;
+}
+
+/* Extra Light */
+@font-face {
+    font-family: 'Gotham';
+    src: url('/fonts/gotham-xlight-webfont.woff2') format('woff2'),
+        url('/fonts/gotham-xlight-webfont.woff') format('woff');
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gotham';
+    src: url('/fonts/gotham-xlightitalic-webfont.woff2') format('woff2'),
+        url('/fonts/gotham-xlightitalic-webfont.woff') format('woff');
+    font-weight: 200;
+    font-style: italic;
+}
+
+/* Light */
+@font-face {
+    font-family: 'Gotham';
+    src: url('/fonts/gotham-light-webfont.woff2') format('woff2'),
+        url('/fonts/gotham-light-webfont.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gotham';
+    src: url('/fonts/gotham-lightitalic-webfont.woff2') format('woff2'),
+        url('/fonts/gotham-lightitalic-webfont.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+}
+
+/* Book */
+@font-face {
+    font-family: 'Gotham';
+    src: url('/fonts/gotham-book-webfont.woff2') format('woff2'),
+        url('/fonts/gotham-book-webfont.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gotham';
+    src: url('/fonts/gotham-bookitalic-webfont.woff2') format('woff2'),
+        url('/fonts/gotham-bookitalic-webfont.woff') format('woff');
+    font-weight: 400;
+    font-style: italic;
+}
+
+/* Medium */
+@font-face {
+    font-family: 'Gotham';
+    src: url('/fonts/gotham-medium-webfont.woff2') format('woff2'),
+        url('/fonts/gotham-medium-webfont.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gotham';
+    src: url('/fonts/gotham-mediumitalic-webfont.woff2') format('woff2'),
+        url('/fonts/gotham-mediumitalic-webfont.woff') format('woff');
+    font-weight: 500;
+    font-style: italic;
+}
+
+/* Bold */
+@font-face {
+    font-family: 'Gotham';
+    src: url('/fonts/gotham-bold-webfont.woff2') format('woff2'),
+        url('/fonts/gotham-bold-webfont.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gotham';
+    src: url('/fonts/gotham-bolditalic-webfont.woff2') format('woff2'),
+        url('/fonts/gotham-bolditalic-webfont.woff') format('woff');
+    font-weight: 700;
+    font-style: italic;
+}
+
+/* Black */
+@font-face {
+    font-family: 'Gotham';
+    src: url('/fonts/gotham-black-webfont.woff2') format('woff2'),
+        url('/fonts/gotham-black-webfont.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gotham';
+    src: url('/fonts/gotham-blackitalic-webfont.woff2') format('woff2'),
+        url('/fonts/gotham-blackitalic-webfont.woff') format('woff');
+    font-weight: 900;
+    font-style: italic;
+}
+
+/* Ultra */
+@font-face {
+    font-family: 'Gotham';
+    src: url('/fonts/gotham-ultra-webfont.woff2') format('woff2'),
+        url('/fonts/gotham-ultra-webfont.woff') format('woff');
+    font-weight: 950;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gotham';
+    src: url('/fonts/gotham-ultraitalic-webfont.woff2') format('woff2'),
+        url('/fonts/gotham-ultraitalic-webfont.woff') format('woff');
+    font-weight: 950;
+    font-style: italic;
+}
+
+
+/* ───────────────────────────────── */
+/*              General              */
+/* ───────────────────────────────── */
+
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif
+    font-family: Gotham;
 }
 
 :root {
     --primary-color: #0074FF;
     --secondary-color: #ffffff;
-}
-
-[data-theme="light"] {
-    /* Dark mode */
-    --primary-color: #ffffff;
-    --secondary-color: #0074FF;
-}
-
-[data-theme="dark"] {
-    /* Dark mode */
-    --primary-color: #ffffff;
-    --secondary-color: #0074FF;
 }
 
 /* ───────────────────────────────── */
@@ -53,6 +186,10 @@ body {
     background-color: var(--secondary-color);
 }
 
+/* ───────────────────────────────── */
+/*         Selections' Format        */
+/* ───────────────────────────────── */
+
 h1::selection {
     background-color: var(--primary-color);
     color: var(--secondary-color);
@@ -78,7 +215,12 @@ a::selection {
     color: var(--secondary-color);
 }
 
-span::selection{
+input::selection {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+}
+
+span::selection {
     background-color: var(--primary-color);
     color: var(--secondary-color);
 }
@@ -86,6 +228,44 @@ span::selection{
 b::selection {
     background-color: var(--primary-color);
     color: var(--secondary-color);
+}
+
+/* ───────────────────────────────── */
+/*        General Animations        */
+/* ───────────────────────────────── */
+
+/* Underline Effect*/
+
+.underline {
+    text-decoration: none;
+    position: relative;
+    color: var(--primary-color);
+}
+
+.underline::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    margin-bottom: -0.1rem;
+    height: 1px;
+    background-color: var(--primary-color);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s ease-in-out;
+}
+
+.underline:hover::after {
+    transform: scaleX(1);
+}
+
+.underline--secondary-color {
+    color: var(--secondary-color);
+}
+
+.underline--secondary-color::after {
+    background-color: var(--secondary-color)
 }
 
 /* ───────────────────────────────── */
@@ -149,7 +329,7 @@ nav {
     gap: 1rem;
 }
 
-.header__nav--signin {  
+.header__nav--signin {
     outline: 1px solid var(--secondary-color);
     border-radius: 0.5rem;
     padding: 0.5rem 1.5rem;
@@ -233,7 +413,7 @@ main {
     display: flex;
     align-items: center;
     flex-direction: column;
-    
+
 }
 
 /* ───────────────────────────────── */
@@ -251,6 +431,7 @@ main {
 .home__presentation--title {
     display: inline-block;
     font-size: 6rem;
+    font-weight: 900;
     border-radius: 2rem;
     background-color: var(--primary-color);
     padding: 0.8rem 3rem;
@@ -277,8 +458,8 @@ main {
 }
 
 .home__descriptions.visible {
-    opacity: 1; /* Fully visible */
-    transform: translateY(0); /* Move to original position */
+    opacity: 1;
+    transform: translateY(0);
 }
 
 .home__description {
@@ -293,6 +474,21 @@ main {
 .home__description--content {
     font-size: 1.5rem;
     padding: 0.6rem 0;
+}
+
+.home__description--buttons {
+    display: flex;
+    padding: 2rem 0;
+    gap: 2rem;
+}
+
+.home__description--button {
+    padding: 1rem 3rem;
+    border-radius: 5rem;
+    font-size: 1.5rem;
+    font-weight: 500;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
 }
 
 /* ───────────────────────────────── */
@@ -310,7 +506,7 @@ main {
 
 .sign--title {
     font-size: 5.5rem;
-    font-weight: bolder;
+    font-weight: 900;
 }
 
 .sign__form {
@@ -348,6 +544,7 @@ main {
     background-color: var(--secondary-color);
     color: var(--primary-color);
     outline: 0.15rem solid var(--primary-color);
+    font-weight: 500;
 }
 
 .sign__form--element {
@@ -358,6 +555,7 @@ main {
 
 .sign__form--label {
     font-size: 1.2rem;
+    font-weight: 500;
 }
 
 .sign__form--input {
@@ -366,12 +564,13 @@ main {
     outline: 0.12rem solid var(--primary-color);
     color: var(--primary-color);
     border-radius: 0.5rem;
-    font-size: 0.9rem;
+    font-size: 1rem;
 }
 
 .sign__form--input::placeholder {
     color: var(--primary-color);
-    font-size: 0.9rem;
+    font-size: 1rem;
+    font-weight: 400;
 }
 
 .sign__form--input:focus {
@@ -387,11 +586,15 @@ main {
     color: var(--primary-color);
 }
 
+.sign__form--bold {
+    font-weight: 500;
+}
+
 .underline-animation {
     position: relative;
-    text-decoration: none; /* Remove default underline */
-    color: var(--primary-color); /* Change to your desired color */
-    overflow: hidden; /* Hide the underline initially */
+    text-decoration: none;
+    color: var(--primary-color);
+    overflow: hidden;
 }
 
 .underline-animation::after {
@@ -400,12 +603,12 @@ main {
     left: 0;
     bottom: 0;
     width: 100%;
-    height: 2px; /* Thickness of the underline */
-    background-color: var(--primary-color); /* Color of the underline */
-    transform: translateX(-100%); /* Start off-screen */
-    transition: transform 0.3s ease; /* Animation duration and easing */
+    height: 2px;
+    background-color: var(--primary-color);
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
 }
 
 .underline-animation:hover::after {
-    transform: translateX(0); /* Move underline into view on hover */
+    transform: translateX(0);
 }

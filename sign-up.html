@@ -29,8 +29,20 @@
 
     <main class="main__form">
         <section class="sign">
-            <h1 class="sign--title">SIGN IN</h1>
+            <h1 class="sign--title">SIGN UP</h1>
             <form class="sign__form">
+
+                <div class="sign__form--element">
+                    <label for="email" class="sign__form--label">Username</label>
+                    <input 
+                        type="text" 
+                        id="username" 
+                        name="username" 
+                        class="sign__form--input" 
+                        placeholder="@Username" 
+                        required 
+                        aria-required="true">
+                </div>
 
                 <div class="sign__form--element">
                     <label for="email" class="sign__form--label">Email Address</label>
@@ -39,7 +51,7 @@
                         id="email" 
                         name="email" 
                         class="sign__form--input" 
-                        placeholder="Enter your email" 
+                        placeholder="Email Address" 
                         required 
                         aria-required="true">
                 </div>
@@ -51,16 +63,15 @@
                         id="password" 
                         name="password" 
                         class="sign__form--input" 
-                        placeholder="Enter your password" 
+                        placeholder="Password" 
                         required 
                         aria-required="true">
                 </div>
     
-                <button type="submit" class="sign__form--button">Sign In</button>
+                <button type="submit" class="sign__form--button">Sign Up</button>
     
                 <div class="sign__form--links">
-                    <a href="/forgot-password.html" class="sign__form--link underline">Forgot your password?</a>
-                    <a href="/sign-up.html" class="sign__form--link underline">Don't have an account?</a>
+                    <p>By signing up, you agree with our <a href="/terms-of-service.html" class="sign__form--link sign__form--bold underline" target="_blank">Terms of Service</a> and <a href="/privacy-policy.html" class="sign__form--link sign__form--bold underline" target="_blank">Privacy Policy</a>.</p>
                 </div>
             </form>
         </section>

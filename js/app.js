@@ -1,9 +1,4 @@
-const toggleTheme = () => {
-    const body = document.body;
-    const currentTheme = body.getAttribute("data-theme");
-    const newTheme = currentTheme === "dark" ? "light" : "dark";
-    body.setAttribute("data-theme", newTheme);
-}
+'use strict'
 
 const words = ["programmers", "tech lovers", "gamers", "designers"];
 
