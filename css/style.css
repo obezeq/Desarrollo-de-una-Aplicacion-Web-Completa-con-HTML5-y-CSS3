@@ -225,6 +225,11 @@ span::selection {
     color: var(--secondary-color);
 }
 
+strong::selection {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+}
+
 b::selection {
     background-color: var(--primary-color);
     color: var(--secondary-color);
