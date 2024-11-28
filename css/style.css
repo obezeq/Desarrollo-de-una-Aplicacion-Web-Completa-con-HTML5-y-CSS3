@@ -172,6 +172,14 @@ ul {
     list-style: none;
 }
 
+ol {
+    list-style: none;
+}
+
+strong {
+    font-weight: 500;
+}
+
 textarea {
     padding: 0;
     margin: 0;
@@ -679,3 +687,117 @@ main {
     font-weight: 500;
 }
 
+/* ───────────────────────────────── */
+/*              Article              */
+/* ───────────────────────────────── */
+
+.content--underline {
+    text-decoration: underline;
+}
+
+.content--bold {
+    font-weight: 500;
+}
+
+.content--italic {
+    font-weight: 400;
+    font-style: italic;
+}
+
+.article {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.article__title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.article__title--name {
+    width: 70%;
+    font-size: 4rem;
+    text-align: center;
+
+}
+
+.article__title--quote {
+    width: 80%;
+    padding-top: 5rem;
+    padding-bottom: 2rem;
+    font-size: 2.1rem;
+    font-weight: 250;
+    text-align: center;
+}
+
+.article--introduction {
+    font-size: 1.2rem;
+}
+
+.article__section--content {
+    width: 100%;
+    font-size: 1.3rem;
+    font-weight: 400;
+}
+
+.article__sections {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.article__section {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 0;
+    gap: 1rem;
+}
+
+.article__section--introduction {
+    padding-bottom: 3rem;
+}
+
+.article__section--title {
+    font-size: 3rem;
+}
+.article__section--subtitle {
+    font-size: 2rem;
+}
+
+.article__list--ul {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding-left: 2rem;
+    list-style: disc;   
+}
+
+.article__section--ol {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    list-style: decimal;
+    list-style-position: inside;
+}
+
+.article__list--content {
+    padding: 0.5rem 0;
+}
+
+.article__related {
+    width: 80%;
+    padding: 8rem 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.article__related--title {
+    font-size: 4rem;
+    text-align: center;
+}
