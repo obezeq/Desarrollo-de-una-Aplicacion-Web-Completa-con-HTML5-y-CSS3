@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ForoAlejandro | Sign Up</title>
+    <title>ForoAlejandro | Sign In</title>
     <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
@@ -33,19 +33,20 @@
     </header>
 
     <main class="main__form">
-        <section class="sign">
-            <h1 class="form--title">SIGN UP</h1>
-            <form class="form" name="signUpForm" id="signUpForm">
+        <section class="contact">
+            <h1 class="form--title">CONTACT US</h1>
+            <form class="form" name="contactForm" id="contactForm">
 
                 <div class="form--element">
-                    <label for="email" class="form--label">Username</label>
+                    <label for="password" class="form--label">Name</label>
                     <input 
                         type="text" 
-                        id="username" 
-                        name="username" 
+                        id="name" 
+                        name="name" 
                         class="form--input" 
-                        placeholder="@Username" 
-                        required 
+                        placeholder="Enter your name" 
+                        required
+                        focus
                         aria-required="true">
                 </div>
 
@@ -56,27 +57,21 @@
                         id="email" 
                         name="email" 
                         class="form--input" 
-                        placeholder="Email Address" 
+                        placeholder="Enter your email" 
                         required 
                         aria-required="true">
                 </div>
-    
+
                 <div class="form--element">
-                    <label for="password" class="form--label">Password</label>
-                    <input 
-                        type="password" 
-                        id="password" 
-                        name="password" 
-                        class="form--input" 
-                        placeholder="Password" 
-                        required 
-                        aria-required="true">
+                    <label for="email" class="form--label">Message</label>
+                    <textarea id="text" name="text" class="form--textarea" placeholder="Enter your message" required></textarea>
                 </div>
     
-                <button type="submit" class="form--button">Sign Up</button>
+                <button type="submit" class="form--button">Contact</button>
     
                 <div class="form--links">
-                    <p>By signing up, you agree with our <a href="/terms-of-service.html" class="form--link form--bold underline" target="_blank">Terms of Service</a> and <a href="/privacy-policy.html" class="form--link form--bold underline" target="_blank">Privacy Policy</a>.</p>
+                    <a href="/forgot-password.html" class="form--link underline">Forgot your password?</a>
+                    <a href="/sign-up.html" class="form--link underline">Don't have an account?</a>
                 </div>
             </form>
         </section>
