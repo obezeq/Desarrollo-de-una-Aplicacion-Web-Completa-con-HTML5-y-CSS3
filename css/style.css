@@ -446,6 +446,12 @@ main {
     transition: all 0.3s ease;
 }
 
+.notfound--error:hover {
+    color: var(--primary-color);
+    -webkit-text-stroke: 1rem transparent;
+    cursor: pointer;
+}
+
 .notfound--oops {
     font-weight: 900;
     font-size: 8rem;
@@ -454,12 +460,6 @@ main {
 .notfound--oops::after {
     content: 'Oops...';
     transition: all 0.2s ease;
-}
-
-.notfound--error:hover {
-    color: var(--primary-color);
-    -webkit-text-stroke: 1rem (--secondary-color);
-    cursor: pointer;
 }
 
 .notfound--oops:hover::after {
