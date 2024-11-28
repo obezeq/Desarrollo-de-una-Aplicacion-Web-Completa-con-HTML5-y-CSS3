@@ -165,6 +165,7 @@
 
 a {
     text-decoration: none;
+    color: var(--primary-color);
 }
 
 ul {
@@ -424,6 +425,49 @@ main {
     align-items: center;
     flex-direction: column;
 
+}
+
+/* ───────────────────────────────── */
+/*        404 Not Found Page         */
+/* ───────────────────────────────── */
+.notfound {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+    gap: 1rem;
+}
+
+.notfound--error {
+    font-size: 21rem;
+    font-weight: 950;
+    color: var(--secondary-color);
+    -webkit-text-stroke: 1rem var(--primary-color);
+    transition: all 0.3s ease;
+}
+
+.notfound--oops {
+    font-weight: 900;
+    font-size: 8rem;
+}
+
+.notfound--oops::after {
+    content: 'Oops...';
+    transition: all 0.2s ease;
+}
+
+.notfound--error:hover {
+    color: var(--primary-color);
+    -webkit-text-stroke: 1rem (--secondary-color);
+    cursor: pointer;
+}
+
+.notfound--oops:hover::after {
+    content: 'Home';
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    padding: 0.5rem 3rem;
+    border-radius: 3rem;
 }
 
 /* ───────────────────────────────── */
