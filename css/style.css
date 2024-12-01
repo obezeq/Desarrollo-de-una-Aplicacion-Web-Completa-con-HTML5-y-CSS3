@@ -551,6 +551,13 @@ main {
     font-weight: 500;
     background-color: var(--primary-color);
     color: var(--secondary-color);
+    transition: all 0.2s ease;
+}
+
+.home__description--button:hover {
+    background-color: var(--secondary-color);
+    outline: 0.3rem solid var(--primary-color);
+    color: var(--primary-color);
 }
 
 /* ───────────────────────────────── */
