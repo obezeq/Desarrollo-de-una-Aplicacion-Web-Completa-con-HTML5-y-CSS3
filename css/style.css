@@ -546,17 +546,18 @@ main {
 
 .home__description--button {
     padding: 1rem 3rem;
-    border-radius: 5rem;
+    border-radius: 2rem;
     font-size: 1.5rem;
     font-weight: 500;
     background-color: var(--primary-color);
     color: var(--secondary-color);
-    transition: all 0.2s ease;
+    border: 0.3rem solid transparent;
+    transition: 0.2s all ease;
 }
 
 .home__description--button:hover {
     background-color: var(--secondary-color);
-    outline: 0.3rem solid var(--primary-color);
+    border: 0.3rem solid var(--primary-color);
     color: var(--primary-color);
 }
 
