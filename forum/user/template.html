@@ -34,7 +34,7 @@
     </header>
 
     <main class="main__profile">
-        <section class="profile__details">
+        <section class="profile__container">
             <section class="profile__introduction">
                 <span class="fa fa-user-circle profile__avatar"></span>
                 <div class="profile__name">
@@ -42,74 +42,104 @@
                     <h2 class="profile__name--username">@username</h2>
                 </div>
             </section>
-            <section class="profile__stats">
-                <div class="profile__stat">
-                    <span class="profile__stat--amount">0</span>
-                    <span class="profile__stat--type">LIKES</span>
-                </div>
-                <div class="profile__stat">
-                    <span class="profile__stat--amount">0</span>
-                    <span class="profile__stat--type">REP</span>
-                </div>
-                <div class="profile__stat">
-                    <span class="profile__stat--amount">0</span>
-                    <span class="profile__stat--type">VOUCHES</span>
-                </div>
-            </section>
-            <section class="profile__descriptions">
-                <p class="profile__description">
-                    <span class="fa fa-eye profile__description--icon"></span>
-                    <span class="profile__description--description">Status:</span>
-                    <span class="profile__description--status">Online</span>
-                </p>
-                <p class="profile__description">
-                    <span class="fa-regular fa-calendar profile__description--icon"></span>
-                    <span class="profile__description--description">Join Date:</span>
-                    <span class="profile__description--status">01-12-2024</span>
-                </p>
-                <p class="profile__description">
-                    <span class="fa fa-window-maximize profile__description--icon"></span>
-                    <span class="profile__description--description">Website:</span>
-                    <span class="profile__description--status"><a href="https://foroalejandro.com" target="_blank">https://foroalejandro.com</a></span>
-                </p>
-                <p class="profile__description">
-                    <span class="fa-brands fa-github profile__description--icon"></span>
-                    <span class="profile__description--description">GitHub:</span>
-                    <span class="profile__description--status"><a href="https://github.com/envasador" target="_blank">@envasador</a></span>
-                </p>
-                <p class="profile__description">
-                    <span class="fa-brands fa-twitter profile__description--icon"></span>
-                    <span class="profile__description--description">Twitter:</span>
-                    <span class="profile__description--status"><a href="https://twitter.com/envasador" target="_blank">@envasador</a></span>
-                </p>
-                <p class="profile__description">
-                    <span class="fa-brands fa-instagram profile__description--icon"></span>
-                    <span class="profile__description--description">Instagram:</span>
-                    <span class="profile__description--status"><a href="https://instagram.com/envasador" target="_blank">@envasador</a></span>
-                </p>
-            </section>
-            <section class="profile__tags">
-                <span class="profile__tag">STAFF</span>
-                <span class="profile__tag">PROGRAMMER</span>
-                <span class="profile__tag">ARTIST</span>
-                <span class="profile__tag">GAMER</span>
-            </section>
-        </section>
-        <section class="profile__interactions">
             <section class="profile__actions">
                 <button class="profile__action" href="#"><span class="profile__action--icon fa-solid fa-inbox"></span>MESSAGE</button>
                 <button class="profile__action" href="#"><span class="profile__action--icon fa-solid fa-user-plus"></span>REP</button>
                 <button class="profile__action" href="#"><span class="profile__action--icon fa-solid fa-cart-plus"></span>VOUCH</button>
             </section>
+        </section>
+        <section class="profile__interactions">
+            <section class="profile__details">
+                <section class="profile__stats">
+                    <div class="profile__stat">
+                        <span class="profile__stat--amount">0</span>
+                        <span class="profile__stat--type">LIKES</span>
+                    </div>
+                    <div class="profile__stat">
+                        <span class="profile__stat--amount">0</span>
+                        <span class="profile__stat--type">REP</span>
+                    </div>
+                    <div class="profile__stat">
+                        <span class="profile__stat--amount">0</span>
+                        <span class="profile__stat--type">VOUCHES</span>
+                    </div>
+                </section>
+                <section class="profile__descriptions">
+                    <p class="profile__description">
+                        <span class="fa fa-eye profile__description--icon"></span>
+                        <span class="profile__description--description">Status:</span>
+                        <span class="profile__description--status">Online</span>
+                    </p>
+                    <p class="profile__description">
+                        <span class="fa-regular fa-calendar profile__description--icon"></span>
+                        <span class="profile__description--description">Join Date:</span>
+                        <span class="profile__description--status">01-12-2024</span>
+                    </p>
+                    <p class="profile__description">
+                        <span class="fa fa-window-maximize profile__description--icon"></span>
+                        <span class="profile__description--description">Website:</span>
+                        <span class="profile__description--status"><a href="https://foroalejandro.com" target="_blank">https://foroalejandro.com</a></span>
+                    </p>
+                    <p class="profile__description">
+                        <span class="fa-brands fa-github profile__description--icon"></span>
+                        <span class="profile__description--description">GitHub:</span>
+                        <span class="profile__description--status"><a href="https://github.com/envasador" target="_blank">@envasador</a></span>
+                    </p>
+                    <p class="profile__description">
+                        <span class="fa-brands fa-twitter profile__description--icon"></span>
+                        <span class="profile__description--description">Twitter:</span>
+                        <span class="profile__description--status"><a href="https://twitter.com/envasador" target="_blank">@envasador</a></span>
+                    </p>
+                    <p class="profile__description">
+                        <span class="fa-brands fa-instagram profile__description--icon"></span>
+                        <span class="profile__description--description">Instagram:</span>
+                        <span class="profile__description--status"><a href="https://instagram.com/envasador" target="_blank">@envasador</a></span>
+                    </p>
+                </section>
+                <section class="profile__tags">
+                    <span class="profile__tag">STAFF</span>
+                    <span class="profile__tag">PROGRAMMER</span>
+                    <span class="profile__tag">ARTIST</span>
+                    <span class="profile__tag">GAMER</span>
+                </section>
+            </section>
             <section class="profile__posts">
                 <div class="profile__posts--titles">
-                    <h3 class="profile__posts--title">Threads</h3>
-                    <h3 class="profile__posts--title">Posts</h3>
-                    <h3 class="profile__posts--title">Marketplace</h3>
+                    <h3 class="underline underline--large profile__posts--title">Threads</h3>
+                    <h3 class="underline underline--large profile__posts--title">Posts</h3>
+                    <h3 class="underline underline--large profile__posts--title">Marketplace</h3>
                 </div>
                 <div class="profile__post">
-                    <span class="profile__post--category">Category</span>
-                    <span class="profile__post--name">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
+                    <a class="profile__post--category">Category</a>
+                    <a class="profile__post--name">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a>
+                </div>
+                <div class="profile__post">
+                    <a class="profile__post--category">Category</a>
+                    <a class="profile__post--name">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a>
+                </div>
+                <div class="profile__post">
+                    <a class="profile__post--category">Category</a>
+                    <a class="profile__post--name">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a>
+                </div>
+                <div class="profile__post">
+                    <a class="profile__post--category">Category</a>
+                    <a class="profile__post--name">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a>
+                </div>
+                <div class="profile__post">
+                    <a class="profile__post--category">Category</a>
+                    <a class="profile__post--name">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a>
+                </div>
+                <div class="profile__post">
+                    <a class="profile__post--category">Category</a>
+                    <a class="profile__post--name">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a>
+                </div>
+                <div class="profile__post">
+                    <a class="profile__post--category">Category</a>
+                    <a class="profile__post--name">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a>
+                </div>
+                <div class="profile__post">
+                    <a class="profile__post--category">Category</a>
+                    <a class="profile__post--name">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a>
                 </div>
             </section>
         </section>

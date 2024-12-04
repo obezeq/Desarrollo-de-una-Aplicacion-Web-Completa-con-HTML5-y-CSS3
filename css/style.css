@@ -288,6 +288,10 @@ b::selection {
     background-color: var(--secondary-color)
 }
 
+.underline--large::after {
+    height: 3px;
+}
+
 /* ───────────────────────────────── */
 /*              Header               */
 /* ───────────────────────────────── */
@@ -963,24 +967,28 @@ main {
 /* ───────────────────────────────── */
 
 .main__profile {
-    background-color: bisque;
-    width: 100%;
+    width: 100;
     display: flex;
-    gap: 10%;
+    flex-direction: column;
+    gap: 3rem;
     justify-content: space-between;
 }
 
-.profile__details {
-    width: 33%;
-    background-color: aqua;
+/* -------------------- */
+
+/* Profile Details & Actions */
+
+.profile__container {
+    width: 100%;
     display: flex;
-    flex-direction: column;
+    align-items: center;
     gap: 2.4rem;
 }
 
 /* Profile Name, Username & Avatar */
 
 .profile__introduction {
+    width: 100%;
     display: flex;
     align-items: center;
     gap: 2rem;
@@ -1003,6 +1011,53 @@ main {
 .profile__avatar {
     font-size: 5rem;
 }
+
+/* Profile Actions */
+
+.profile__actions {
+    width: 100%;
+    justify-content: flex-end;
+    display: flex;
+    gap: 4rem;
+}
+
+.profile__action {
+    display: flex;
+    gap: 0.7rem;
+    height: 50%;
+    padding: 0.7rem;
+    border-radius: 0.7rem;
+    border: 0;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    font-weight: 600;
+    font-size: 1.3rem;
+    align-items: center;
+}
+
+.profile__action:hover {
+    cursor: pointer;
+}
+
+/* -------------------- */
+
+/* Profile Details & Posts */
+/* -------------------- */
+
+.profile__interactions {
+    width: 100%;
+    display: flex;
+}
+
+/* Profile Details */
+
+.profile__details {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
 
 /* Profile Stats */
 
@@ -1036,8 +1091,8 @@ main {
 .profile__descriptions {
     display: flex;
     flex-direction: column;
-    gap: 0.7rem;
-    font-size: 1.2rem;
+    gap: 1rem;
+    font-size: 1.3rem;
 }
 
 .profile__description {
@@ -1068,36 +1123,57 @@ main {
     background-color: var(--primary-color);
 }
 
-/* Profile Interactions (Actions & Posts) */
+/* Profile Posts*/
 
-.profile__interactions {
-    width: 66%;
+.profile__posts {
+    width: 100%;
     display: flex;
     flex-direction: column;
-    gap: 13%;
-    background-color: greenyellow;
+    gap: 1rem;
+    padding: 2rem;
+    border: 0.2rem solid var(--primary-color);
+    border-radius: 2rem;
+    font-size: 1.1rem;
 }
 
-.profile__actions {
-    background-color: yellow;
-    justify-content: flex-end;
+.profile__posts--titles {
     display: flex;
     gap: 4rem;
+    padding: 0 0 0.5rem 0;
 }
 
-.profile__action {
+.profile__posts--title {
+    font-size: 2rem;
+}
+
+.profile__posts--title:hover {
+    cursor: pointer;
+}
+
+.profile__post {
     display: flex;
-    gap: 0.7rem;
-    padding: 0.7rem;
-    border-radius: 0.7rem;
-    border: 0;
-    background-color: var(--primary-color);
-    color: var(--secondary-color);
-    font-weight: 600;
-    font-size: 1.3rem;
+    gap: 2rem;
     align-items: center;
 }
 
-.profile__action:hover {
+.profile__post--category {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    font-weight: 450;
+}
+
+.profile__post--category:hover {
     cursor: pointer;
 }
+
+.profile__post--name {
+    font-weight: 450;
+}
+
+.profile__post--name:hover {
+    cursor: pointer;
+}
+
+/* -------------------- */
