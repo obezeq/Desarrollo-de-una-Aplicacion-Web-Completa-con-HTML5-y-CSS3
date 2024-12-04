@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ForoAlejandro | @template</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="../../images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../../images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../../images/favicon/favicon-16x16.png">
+    <link rel="icon" href="../../images/favicon/favicon.ico">
+    <link rel="manifest" href="../../images/favicon/site.webmanifest">
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header id="header">
+        <a class="header__logo" href="../../index.html">
+            <img class="header__logo--image" src="../../images/ForoAlejandro-Logo.svg" alt="ForoAlejandro Logo">
+            <span class="header__logo--text">ForoAlejandro</span>
+        </a>
+        <nav>
+            <ul class="header__list header__list--nav">
+                <li class="header__nav"><a class="underline underline--secondary-color" href="../../forum.html">Forum</a></li>
+                <li class="header__nav"><a class="underline underline--secondary-color" href="../../blog.html">Blog</a></li>
+                <li class="header__nav"><a class="underline underline--secondary-color" href="../../contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <nav>
+            <ul class="header__list header__list--sign">
+                <li class="sign-in.html"><a class="header__nav--signin" href="../../sign-in.html">Sign in</a></li>
+                <li class="sign-up.html"><a class="header__nav--signup" href="../../sign-up.html">Sign up</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main__profile">
+        <section class="profile__details">
+            <section class="profile__introduction">
+                <span class="fa fa-user-circle profile__avatar"></span>
+                <div class="profile__name">
+                    <h1 class="profile__name--name">Profile Name <span class="fa fa-check profile__verified"></span></h1>
+                    <h2 class="profile__name--username">@username</h2>
+                </div>
+            </section>
+            <section class="profile__stats">
+                <div class="profile__stat">
+                    <span class="profile__stat--amount">0</span>
+                    <span class="profile__stat--type">LIKES</span>
+                </div>
+                <div class="profile__stat">
+                    <span class="profile__stat--amount">0</span>
+                    <span class="profile__stat--type">REP</span>
+                </div>
+                <div class="profile__stat">
+                    <span class="profile__stat--amount">0</span>
+                    <span class="profile__stat--type">VOUCHES</span>
+                </div>
+            </section>
+            <section class="profile__descriptions">
+                <p class="profile__description">
+                    <span class="fa fa-eye profile__description--icon"></span>
+                    <span class="profile__description--description">Status:</span>
+                    <span class="profile__description--status">Online</span>
+                </p>
+                <p class="profile__description">
+                    <span class="fa-regular fa-calendar profile__description--icon"></span>
+                    <span class="profile__description--description">Join Date:</span>
+                    <span class="profile__description--status">01-12-2024</span>
+                </p>
+                <p class="profile__description">
+                    <span class="fa fa-window-maximize profile__description--icon"></span>
+                    <span class="profile__description--description">Website:</span>
+                    <span class="profile__description--status"><a href="https://foroalejandro.com" target="_blank">https://foroalejandro.com</a></span>
+                </p>
+                <p class="profile__description">
+                    <span class="fa-brands fa-github profile__description--icon"></span>
+                    <span class="profile__description--description">GitHub:</span>
+                    <span class="profile__description--status"><a href="https://github.com/envasador" target="_blank">@envasador</a></span>
+                </p>
+                <p class="profile__description">
+                    <span class="fa-brands fa-twitter profile__description--icon"></span>
+                    <span class="profile__description--description">Twitter:</span>
+                    <span class="profile__description--status"><a href="https://twitter.com/envasador" target="_blank">@envasador</a></span>
+                </p>
+                <p class="profile__description">
+                    <span class="fa-brands fa-instagram profile__description--icon"></span>
+                    <span class="profile__description--description">Instagram:</span>
+                    <span class="profile__description--status"><a href="https://instagram.com/envasador" target="_blank">@envasador</a></span>
+                </p>
+            </section>
+            <section class="profile__tags">
+                <span class="profile__tag">STAFF</span>
+                <span class="profile__tag">PROGRAMMER</span>
+                <span class="profile__tag">ARTIST</span>
+                <span class="profile__tag">GAMER</span>
+            </section>
+        </section>
+        <section class="profile__interactions">
+            <section class="profile__actions">
+                <button class="profile__action" href="#"><span class="profile__action--icon fa-solid fa-inbox"></span>MESSAGE</button>
+                <button class="profile__action" href="#"><span class="profile__action--icon fa-solid fa-user-plus"></span>REP</button>
+                <button class="profile__action" href="#"><span class="profile__action--icon fa-solid fa-cart-plus"></span>VOUCH</button>
+            </section>
+            <section class="profile__posts">
+                <div class="profile__posts--titles">
+                    <h3 class="profile__posts--title">Threads</h3>
+                    <h3 class="profile__posts--title">Posts</h3>
+                    <h3 class="profile__posts--title">Marketplace</h3>
+                </div>
+                <div class="profile__post">
+                    <span class="profile__post--category">Category</span>
+                    <span class="profile__post--name">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
+                </div>
+            </section>
+        </section>
+    </main>
+
+    <footer>
+        <a class="footer__copyright" href="#header">
+            <img class="footer__copyright--image" src="../../images/ForoAlejandro-Logo.svg" alt="ForoAlejandro Logo">
+            <span>© 2024 ForoAlejandro</span>
+        </a>
+        <nav>
+            <ul class="footer__list">
+                <li><a class="footer__nav underline underline--secondary-color" href="../../terms-of-service.html" target="_blank">Terms of Service</a></li>
+                <li><a class="footer__nav underline underline--secondary-color" href="../../privacy-policy.html" target="_blank">Privacy Policy</a></li>
+                <li><a class="footer__nav underline underline--secondary-color" href="../../rules.html" target="_blank">Rules</a></li>
+                <li><a class="footer__nav underline underline--secondary-color" href="../../contact.html" target="_blank">Contact</a></li>
+            </ul>
+        </nav>
+    </footer>
+</body>
+</html>

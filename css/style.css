@@ -958,3 +958,146 @@ main {
     text-align: center;
 }
 
+/* ───────────────────────────────── */
+/*              Profile              */
+/* ───────────────────────────────── */
+
+.main__profile {
+    background-color: bisque;
+    width: 100%;
+    display: flex;
+    gap: 10%;
+    justify-content: space-between;
+}
+
+.profile__details {
+    width: 33%;
+    background-color: aqua;
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+}
+
+/* Profile Name, Username & Avatar */
+
+.profile__introduction {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.profile__name {
+    display: flex;
+    flex-direction: column;
+}
+
+.profile__name--name {
+    font-size: 2.5rem;
+}
+
+.profile__name--username {
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.profile__avatar {
+    font-size: 5rem;
+}
+
+/* Profile Stats */
+
+.profile__stats {
+    display: flex;
+    gap: 1rem;
+}
+
+.profile__stat {
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 0.3rem;
+    padding: 1.5rem 0.5rem;
+    border: 0.1rem solid var(--primary-color);
+    border-radius: 1rem;
+    font-weight: 500;
+}
+
+.profile__stat--amount {
+    font-size: 1.2rem;
+}
+
+.profile__stat--type {
+    font-size: 0.8rem;
+}
+
+/* Profile Descriptions */
+
+.profile__descriptions {
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+    font-size: 1.2rem;
+}
+
+.profile__description {
+    display: flex;
+    gap: 0.6rem;
+    align-items: center;
+}
+
+.profile__description--description {
+    font-weight: 500;
+}
+
+/* Profile Tags */
+
+.profile__tags {
+    width: 80%;
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.profile__tag {
+    padding: 0.7rem 1.5rem;
+    border-radius: 1rem;
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: var(--secondary-color);
+    background-color: var(--primary-color);
+}
+
+/* Profile Interactions (Actions & Posts) */
+
+.profile__interactions {
+    width: 66%;
+    display: flex;
+    flex-direction: column;
+    gap: 13%;
+    background-color: greenyellow;
+}
+
+.profile__actions {
+    background-color: yellow;
+    justify-content: flex-end;
+    display: flex;
+    gap: 4rem;
+}
+
+.profile__action {
+    display: flex;
+    gap: 0.7rem;
+    padding: 0.7rem;
+    border-radius: 0.7rem;
+    border: 0;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    font-weight: 600;
+    font-size: 1.3rem;
+    align-items: center;
+}
+
+.profile__action:hover {
+    cursor: pointer;
+}
