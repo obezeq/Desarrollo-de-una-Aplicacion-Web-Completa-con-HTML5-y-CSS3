@@ -1306,6 +1306,11 @@ main {
     font-size: 2.5rem;
 }
 
+.trending__post {
+    display: flex;
+    flex-direction: column;
+}
+
 .trending__post--title {
     font-size: 1.2rem;
     font-weight: 500;
