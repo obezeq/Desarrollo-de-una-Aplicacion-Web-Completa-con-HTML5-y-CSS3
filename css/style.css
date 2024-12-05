@@ -347,16 +347,20 @@ nav {
     border-radius: 0.5rem;
     padding: 0.5rem 1rem;
     font-weight: bold;
+}
 
-    @media (max-width: 950px) {
+@media (max-width: 950px) {
+    .header__logo--text {
         display: none;
     }
 }
 
 .header__list--nav {
     gap: 4rem;
+}
 
-    @media (max-width: 768px) {
+@media (max-width: 768px) {
+    .header__list--nav {
         display: none;
     }
 }
