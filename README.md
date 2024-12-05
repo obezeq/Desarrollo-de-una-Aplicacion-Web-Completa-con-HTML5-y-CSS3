@@ -56,5 +56,5 @@ La web **ForoAlejandro** ya está desarrollada, y esta documentación detalla lo
   - Implementación de diseño adaptativo mediante **media queries** en el CSS3, creando una web altamente responsive.
   - Animaciones y transiciones para enriquecer la experiencia de usuario, especialmente con `<transition>` y algun uso simple de JavaScript, para animaciones en página principal en el subtítulo, así como la animación de "A forum for ... [programmers, designers, gamers, tech lovers...]
 
-**Rendimiento y estándares:**
-- Uso de prácticas estándar para garantizar la calidad del código y su mantenimiento.
+**Página web**
+https://obezeq.github.io/ForoAlejandro
